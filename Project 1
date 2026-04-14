@@ -1,0 +1,28 @@
+# AI Prompt Engineering Portfolio
+
+3 production-grade case studies demonstrating core prompt engineering skills — built to Turing evaluation standards.
+
+---
+
+## 📁 Projects
+
+| # | Project | Focus |
+|---|---------|-------|
+| 01 | [Prompt Reliability System](./project1.md) | Prompt layering, role definition, output formatting |
+| 02 | [AI Workflow System](./project2.md) | Multi-step chaining, content pipeline |
+| 03 | [AI Failure Analysis](./project3.md) | Hallucination, vagueness, overconfidence fixes |
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Prompt layering and constraint design
+- Multi-step AI workflow architecture
+- AI failure diagnosis and systematic fixing
+- Output formatting and role prompting
+
+---
+
+## 👤 About
+
+Built by Ben Chika — Prompt Engineer
