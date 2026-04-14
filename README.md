@@ -3,4 +3,3 @@
 - Prompt layering & reliability
 - Multi-step AI workflow design  
 - AI failure diagnosis & fixes
-Built to Turing evaluation standards.
