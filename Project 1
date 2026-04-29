@@ -1,28 +1,68 @@
-# AI Prompt Engineering Portfolio
-
-3 production-grade case studies demonstrating core prompt engineering skills — built to Turing evaluation standards.
-
----
-
-## 📁 Projects
-
-| # | Project | Focus |
-|---|---------|-------|
-| 01 | [Prompt Reliability System](./project1.md) | Prompt layering, role definition, output formatting |
-| 02 | [AI Workflow System](./project2.md) | Multi-step chaining, content pipeline |
-| 03 | [AI Failure Analysis](./project3.md) | Hallucination, vagueness, overconfidence fixes |
+# Project 1 — Prompt Reliability System
+### Improving AI Output Using Prompt Layering
 
 ---
 
-## 🧠 Skills Demonstrated
+##  Problem
 
-- Prompt layering and constraint design
-- Multi-step AI workflow architecture
-- AI failure diagnosis and systematic fixing
-- Output formatting and role prompting
+A user wants to understand cryptocurrency but gets a generic, jargon-heavy response. The prompt gives the AI no direction on tone, depth, or format.
 
 ---
 
-## 👤 About
+##  Initial Prompt (Weak)
 
-Built by Ben Chika — Prompt Engineer
+```
+Explain crypto to a beginner
+```
+
+---
+
+##  Output (Weak)
+
+> Cryptocurrency is a digital or virtual form of currency that uses cryptography for security. It operates on decentralized networks based on blockchain technology — a distributed ledger enforced by a disparate network of computers...
+
+---
+
+## Issues Identified
+
+- No role assigned — AI defaults to encyclopedia tone
+- No audience specification — assumes prior knowledge
+- No format — one dense paragraph, not scannable
+- No constraints — AI can go in any direction
+
+---
+
+## Improved Prompt (Layered)
+
+```
+You are a patient teacher.
+
+Explain cryptocurrency to a complete beginner using:
+- Simple language
+- Real-world analogies
+- Step-by-step explanation
+
+Format your response as:
+1. What is crypto
+2. How it works
+3. Simple real-world example
+```
+
+---
+
+##  Output (Improved)
+
+> **1. What is Crypto**
+> Think of crypto like digital cash that no bank controls. Instead of the government printing it, it's created by math and computers.
+>
+> **2. How It Works**
+> Every transaction is recorded on a "blockchain" — imagine a shared Google Sheet that thousands of computers all hold a copy of. Nobody can secretly edit it.
+>
+> **3. Simple Example**
+> Sending Bitcoin is like emailing money directly to a friend — no bank in the middle, no 3-day wait, no fees to a middleman.
+
+---
+
+##  Key Insight
+
+> Adding a role, audience constraints, content requirements, and explicit output format converts a generic response into a targeted, actionable explanation. Each layer removes a dimension of ambiguity.
